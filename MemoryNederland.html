@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Nederland</title>
+    <link rel="stylesheet" href="MemoryNederland.css">
+
+</head>
+
+<body>
+
+    <audio hidden id="muziekID" autoplay>
+        <source src="Assets/Music/BGMusicDutch.mp3" type="audio/mp3" id="muziek"> 
+    </audio>
+    <audio hidden id="tweeKaartenSfx">
+        <source src="Assets/Music/OleBullfighterSoundEffect.mp3" type="audio/mp3" >
+    </audio>
+    <audio id="gangsterforlife" type="audio/wav">
+        <source src="Gangsterforlife.wav" type="audio/wav" id="tweeKaartenSfx">
+    </audio>
+    
+    
+    <input type="button" value="Klik om te starten!" id="voorGrond" onclick="clickStart()">
+
+
+
+
+    <nav class="navigatie">
+        <p>Spaans</p>
+        <a href="MemorySpanje.html"><input type="image" src="Assets/Pictures/spaansevlag.jpg" id="spaansevlag" ></a> <br>
+        <p>Italiaans</p>
+        <a href="MemoryItalie.html"><input type="image" src="Assets/Pictures/italiaansevlag.jpg" id="italiaansevlag"></a> <br>
+        <p>Frans</p>
+        <a href="MemoryFrankrijk.html"><input type="image" src="Assets/Pictures/fransevlag.png" id="fransevlag"></a> <br>
+        <p>Nederlands</p>
+        <a href="MemoryNederland.html"><input type="image" src="Assets/Pictures/nederlandseVlag.png" id="nederlandsevlag"></a><br>
+        <p>Duits</p>
+        <a href="Memoryv3Duitsland.html"><input type="image" src="Assets/Pictures/duitsevlag.png" id="duitsevlag"></a><br>
+        <p>Europa</p>
+        <a href="memory start.html"><input type="image" src="Assets/Pictures/europa.jpg" id="europa"></a><br>
+    
+    </nav>
+    
+  
+    <section class="memory-spel">
+        <header>
+            <h1 class="paginatitel">Memory spelen!</h1>
+            <h2 class="taal"> Nederlands - Hollandsch </h2>
+            
+            <section class="spelinfo">
+                <div class="spelinfo2">
+            <span id="time">1:00</span>
+                </div><div class="spelinfo2"> 
+            Punten: <span class="score" id="scorefelix">0</span>
+                </div> 
+        </section>
+        </header>
+            
+        
+
+    
+    <div class="memory-kaart" data-naam="kaas">
+        
+        <img class="voorkant" src="Assets/Pictures/kaas.png" alt="kaas" >
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Kaas</b></p>
+            </div>
+    </div> <!--KAART 1=============================================================================-->
+    <div class="memory-kaart" data-naam="kaas">
+        <img class="voorkant" src="Assets/Pictures/kaas.png" alt="kaas">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Kaas</b></p>
+            </div>
+    </div> <!--KAART 2=============================================================================-->
+    <div class="memory-kaart " data-naam="wallen">
+        <img class="voorkant" src="Assets/Pictures/wallen.png" alt="wallen">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Gracht</b></p>
+            </div>   
+    </div> <!--KAART 3=============================================================================-->
+    <div class="memory-kaart" data-naam="wallen">
+        <img class="voorkant" src="Assets/Pictures/wallen.png" alt="wallen">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Straat</b></p>
+            </div>
+    </div> <!--KAART 4=============================================================================-->
+    <div class="memory-kaart" data-naam="weed">
+        <img class="voorkant" src="Assets/Pictures/weed.png" alt="weed">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Plantje</b></p>
+            </div>
+    </div> <!--KAART 5=============================================================================-->
+    <div class="memory-kaart" data-naam="weed">
+        <img class="voorkant" src="Assets/Pictures/weed.png" alt="weed">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Plantje</b></p>
+            </div>
+    </div> <!--KAART 6=============================================================================-->
+    <div class="memory-kaart" data-naam="heineken">
+        <img class="voorkant" src="Assets/Pictures/heineken.png" alt="heineken">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="heineken">
+        <div class="voorkantText">
+            <p><b>Heineken</b></p>
+            </div>
+    </div> <!--KAART 7=============================================================================-->
+    <div class="memory-kaart" data-naam="heineken">
+        <img class="voorkant" src="Assets/Pictures/heineken.png" alt="heineken">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Heineken</b></p>
+            </div>
+    </div><!--KAART 8=============================================================================-->
+    <div class="memory-kaart" data-naam="klompen">
+        <img class="voorkant" src="Assets/Pictures/klompen.png" alt="klompen">
+         <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+         <div class="voorkantText">
+            <p><b>Klompen</b></p>
+            </div>
+    </div><!--KAART 9=============================================================================-->
+    <div class="memory-kaart" data-naam="klompen">
+            <img class="voorkant" src="Assets/Pictures/klompen.png" alt="klompen">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Klompen</b></p>
+                </div>
+        </div><!--KAART 10=============================================================================-->
+     <div class="memory-kaart" data-naam="tulpen">
+            <img class="voorkant" src="Assets/Pictures/tulpen.png" alt="tulpen">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Tulpen</b></p>
+                </div>
+    </div><!--KAART 11=============================================================================-->
+    <div class="memory-kaart" data-naam="tulpen">
+        <img class="voorkant" src="Assets/Pictures/tulpen.png" alt="tulpen">
+        <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+        <div class="voorkantText">
+            <p><b>Tulpen</b></p>
+            </div>
+    </div><!--KAART 12=============================================================================-->
+     <div class="memory-kaart" data-naam="molen">
+            <img class="voorkant" src="Assets/Pictures/molen.png" alt="molen">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Molen</b></p>
+                </div>
+    </div><!--KAART 13=============================================================================-->
+    <div class="memory-kaart" data-naam="molen">
+            <img class="voorkant" src="Assets/Pictures/molen.png" alt="molen">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Molen</b></p>
+                </div>
+    </div><!--KAART 14=============================================================================-->
+    <div class="memory-kaart" data-naam="stroopwafel">
+            <img class="voorkant" src="Assets/Pictures/stroopwafel.png" alt="stroopwafel">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Stroopwafel</b></p>
+                </div>
+    </div><!--KAART 15=============================================================================-->
+    <div class="memory-kaart" data-naam="stroopwafel">
+            <img class="voorkant" src="Assets/Pictures/stroopwafel.png" alt="stroopwafel">
+            <img class="achterkant" src="Assets/Pictures/nederlandseVlag.png" alt="nederlandseVlag">
+            <div class="voorkantText">
+                <p><b>Stroopwafel</b></p>
+                </div>
+    </div><!--KAART 16=============================================================================-->    
+    
+
+
+</section>
+    
+
+    
+
+
+
+
+
+
+
+
+
+<script src="Memoryv2Nederland.js"></script>
+</body>
+</html>

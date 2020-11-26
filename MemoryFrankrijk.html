@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Frankrijk</title>
+    <link rel="stylesheet" href="MemoryFrankrijk.css ">
+
+</head>
+
+<body>
+
+
+    <audio hidden id="muziekID" autoplay>
+        <source src="Assets/Music/BGMusicFrench.mp3" type="audio/mp3" id="muziek"> 
+    </audio>
+    <audio hidden id="tweeKaartenSfx">
+        <source src="Assets/Music/OleBullfighterSoundEffect.mp3" type="audio/mp3" >
+    </audio>
+    <audio id="gangsterforlife" type="audio/wav">
+        <source src="Gangsterforlife.wav" type="audio/wav" id="tweeKaartenSfx">
+    </audio>
+    
+    <input type="button" value="Klik om te starten!" id="voorGrond" onclick="clickStart()">
+
+
+
+
+    <nav class="navigatie">
+        <p>Spaans</p>
+        <a href="MemorySpanje.html"><input type="image" src="Assets/Pictures/spaansevlag.jpg" id="spaansevlag" ></a> <br>
+        <p>Italiaans</p>
+        <a href="MemoryItalie.html"><input type="image" src="Assets/Pictures/italiaansevlag.jpg" id="italiaansevlag"></a> <br>
+        <p>Frans</p>
+        <a href="MemoryFrankrijk.html"><input type="image" src="Assets/Pictures/fransevlag.png" id="fransevlag"></a> <br>
+        <p>Nederlands</p>
+        <a href="MemoryNederland.html"><input type="image" src="Assets/Pictures/nederlandseVlag.png" id="nederlandsevlag"></a><br>
+        <p>Duits</p>
+        <a href="Memoryv3Duitsland.html"><input type="image" src="Assets/Pictures/duitsevlag.png" id="duitsevlag"></a><br>
+        <p>Europa</p>
+        <a href="memory start.html"><input type="image" src="Assets/Pictures/europa.jpg" id="europa"></a><br>
+    
+    </nav>
+
+  
+    <section class="memory-spel">
+        <header>
+            <h1 class="paginatitel">Memory spelen!</h1>
+            <h2 class="taal"> Frans - français </h2>
+            <section class="spelinfo">
+                <div class="spelinfo2">
+            <span id="time">1:00</span>
+                </div><div class="spelinfo2"> 
+            Punten: <span class="score" id="scorefelix">0</span>
+                </div> 
+        </section>
+        </header>
+            
+        
+
+    
+    <div class="memory-kaart" data-naam="goeiemorgen">
+        
+        <img class="voorkant" src="Assets/Pictures/schilder.png" alt="schilder" >
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Schilder</b></p>
+            </div>
+    </div> <!--KAART 1=============================================================================-->
+    <div class="memory-kaart" data-naam="goeiemorgen">
+        <img class="voorkant" src="Assets/Pictures/schilder.png" alt="schilder">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Peintre</b></p>
+            </div>
+    </div> <!--KAART 2=============================================================================-->
+    <div class="memory-kaart " data-naam="eifeltoren">
+        <img class="voorkant" src="Assets/Pictures/eifeltoren.png" alt="eifeltoren">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Eiffeltoren</b></p>
+            </div>   
+    </div> <!--KAART 3=============================================================================-->
+    <div class="memory-kaart" data-naam="eifeltoren">
+        <img class="voorkant" src="Assets/Pictures/eifeltoren.png" alt="eifeltoren">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>tour Eiffel</b></p>
+            </div>
+    </div> <!--KAART 4=============================================================================-->
+    <div class="memory-kaart" data-naam="fransman">
+        <img class="voorkant" src="Assets/Pictures/fransman.png" alt="fransman">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Fransman</b></p>
+            </div>
+    </div> <!--KAART 5=============================================================================-->
+    <div class="memory-kaart" data-naam="fransman">
+        <img class="voorkant" src="Assets/Pictures/fransman.png" alt="fransman">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>
+                Français</b></p>
+            </div>
+    </div> <!--KAART 6=============================================================================-->
+    <div class="memory-kaart" data-naam="croissant">
+        <img class="voorkant" src="Assets/Pictures/croissant.png" alt="croissant">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="croissant">
+        <div class="voorkantText">
+            <p><b>Croissant</b></p>
+            </div>
+    </div> <!--KAART 7=============================================================================-->
+    <div class="memory-kaart" data-naam="croissant">
+        <img class="voorkant" src="Assets/Pictures/croissant.png" alt="croissant">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Croissant</b></p>
+            </div>
+    </div><!--KAART 8=============================================================================-->
+    <div class="memory-kaart" data-naam="franseauto">
+        <img class="voorkant" src="Assets/Pictures/franseAuto.png" alt="franseauto">
+         <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+         <div class="voorkantText">
+            <p><b>Auto</b></p>
+            </div>
+    </div><!--KAART 9=============================================================================-->
+    <div class="memory-kaart" data-naam="franseauto">
+            <img class="voorkant" src="Assets/Pictures/franseAuto.png" alt="franseauto">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Voiture</b></p>
+                </div>
+        </div><!--KAART 10=============================================================================-->
+     <div class="memory-kaart" data-naam="notredame">
+            <img class="voorkant" src="Assets/Pictures/notredame.png" alt="notredame">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Onze dame</b></p>
+                </div>
+    </div><!--KAART 11=============================================================================-->
+    <div class="memory-kaart" data-naam="notredame">
+        <img class="voorkant" src="Assets/Pictures/notredame.png" alt="notredame">
+        <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+        <div class="voorkantText">
+            <p><b>Notre dame</b></p>
+            </div>
+    </div><!--KAART 12=============================================================================-->
+     <div class="memory-kaart" data-naam="parijs">
+            <img class="voorkant" src="Assets/Pictures/parijs.png" alt="parijs">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Parijs</b></p>
+                </div>
+    </div><!--KAART 13=============================================================================-->
+    <div class="memory-kaart" data-naam="parijs">
+            <img class="voorkant" src="Assets/Pictures/parijs.png" alt="parijs">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Paris</b></p>
+                </div>
+    </div><!--KAART 14=============================================================================-->
+    <div class="memory-kaart" data-naam="winkel">
+            <img class="voorkant" src="Assets/Pictures/winkel.png" alt="winkel">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Winkel</b></p>
+                </div>
+    </div><!--KAART 15=============================================================================-->
+    <div class="memory-kaart" data-naam="winkel">
+            <img class="voorkant" src="Assets/Pictures/winkel.png" alt="winkel">
+            <img class="achterkant" src="Assets/Pictures/fransVlag.svg" alt="franseVlag">
+            <div class="voorkantText">
+                <p><b>Magasin</b></p>
+                </div>
+    </div><!--KAART 16=============================================================================-->    
+    
+
+
+</section>
+    
+
+    
+
+
+
+
+<script src="Memoryv2Frankrijk.js"></script>
+</body>
+</html>

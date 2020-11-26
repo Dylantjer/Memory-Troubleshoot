@@ -1,0 +1,67 @@
+@font-face{
+    font-family: "Funny";
+    src: url("Assets/Packaging\ Funny.woff") format("woff"), url("Assets/Packaging\ Funny.woff2") format("woff2") 
+}
+
+@font-face{
+    font-family: "ScoreTime";
+    src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#0084ff,#014280);
+}
+.paginatitel {
+    color: white;
+    font-family: Funny, serif;
+    font-size: 50pt;
+    font-weight: normal;
+    text-align: center;
+}
+.game-info-container{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    color: white;
+    font-family: ScoreTime, serif;
+    font-size: 20pt;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 1000px;
+}
+.kaart {
+    background-color: purple;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+}
+.achter {
+position: absolute;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+border-radius: 10px;
+}
+
+
